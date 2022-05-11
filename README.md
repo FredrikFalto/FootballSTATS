@@ -1,8 +1,7 @@
 # Getting Started with Create React App
 
-npm install -D tailwindcss\
-npx tailwindcss init\
-npm i daisyui\
+npm install bootstrap\
+npm install react-bootstrap bootstrap\
 npm i express mongoose\
 npm i --save-dev dotenv nodemon\
 npm run devStart
