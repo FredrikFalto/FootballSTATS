@@ -1,12 +1,12 @@
 import React from "react";
 
-import Navbar from "./components/navbar";
+import Navigation from "./components/navigation";
 
 const App = () => {
     return (
         <div>
-            <Navbar />
-            <h2 className="text-3xl text-red-600">Hello</h2>
+            <Navigation />
+            <h2>Hello</h2>
         </div>
     );
 };
