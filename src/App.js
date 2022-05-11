@@ -1,15 +1,14 @@
-import "./index.css";
+import React from "react";
 
-function App() {
+import Navbar from "./components/navbar";
+
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p className="text-3xl">
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-            </header>
+        <div>
+            <Navbar />
+            <h2 className="text-3xl text-red-600">Hello</h2>
         </div>
     );
-}
+};
 
 export default App;
