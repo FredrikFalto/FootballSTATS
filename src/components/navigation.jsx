@@ -13,7 +13,9 @@ function Navigation() {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">FootballSTATS</Navbar.Brand>
+                <Navbar.Brand href="#" className="alert-danger">
+                    FootballSTATS
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -31,7 +33,7 @@ function Navigation() {
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success">Search</Button>
+                        <Button variant="danger">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
