@@ -7,7 +7,24 @@ function Home() {
         <div>
             <Navigation />
 
-            <h1 className="text-center text-danger">Hi</h1>
+            <div className="container">
+                <div className="row">
+                    <h1 className="text-center text-danger">
+                        Welcome to FootballSTATS
+                    </h1>
+                    <h4 className="text-center text-danger">
+                        Please select a league:
+                    </h4>
+                </div>
+
+                <div className="row">
+                    <div className="col">
+                        <button className="btn btn-success">
+                            Premier League
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
