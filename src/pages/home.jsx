@@ -1,15 +1,11 @@
 import React from "react";
 
-import { Button } from "react-bootstrap";
-
-import Navigation from "../components/navigation";
+import { Button, Container } from "react-bootstrap";
 
 function Home() {
     return (
         <div>
-            <Navigation />
-
-            <div className="container">
+            <Container>
                 <div className="row">
                     <h1 className="text-center text-dark">
                         Welcome to FootballSTATS
@@ -22,9 +18,9 @@ function Home() {
                 <div className="row">
                     <div className="col-lg-3"></div>
                     <div className="col-lg-6">
-                        <button className="btn btn-danger col-lg-12">
+                        <Button variant="danger" className="col-lg-12">
                             Premier League
-                        </button>
+                        </Button>
                     </div>
                     <div className="col-lg-3"></div>
                 </div>
@@ -38,7 +34,7 @@ function Home() {
                     </div>
                     <div className="col-lg-3"></div>
                 </div>
-            </div>
+            </Container>
         </div>
     );
 }
