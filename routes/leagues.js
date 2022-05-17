@@ -59,6 +59,7 @@ router.delete("/:id", getLeague, async (req, res) => {
     }
 });
 
+// Search
 async function getLeague(req, res, next) {
     let league;
     try {

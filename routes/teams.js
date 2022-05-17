@@ -59,6 +59,7 @@ router.delete("/:id", getTeam, async (req, res) => {
     }
 });
 
+// Search
 async function getTeam(req, res, next) {
     let team;
     try {

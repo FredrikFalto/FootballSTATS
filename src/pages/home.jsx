@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "../database/team.js";
 
 import { Button, Container } from "react-bootstrap";
 
 function Home() {
+    useEffect(() => {
+        fetchItems();
+    }, []);
+
+    const [items, setItems] = useState([]);
+
+    const fetchItems = async () => {
+        const data = await fetch("/leagues");
+        const items = await data.json();
+        setItems(items);
+    };
+
     return (
         <div>
             <Container>

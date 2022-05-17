@@ -6,12 +6,12 @@ GET http://localhost:4000/leagues/6271386f7ada02bdf9e79c87
 
 ###
 
-POST http://localhost:4000/teams
+POST http://localhost:4000/leagues
 Content-Type: application/json
 
 {
-    "name": "Man United",
-    "league": "6271386f7ada02bdf9e79c87"
+    "name": "Ligue 1",
+    "country": "France"
 }
 
 ###
@@ -20,9 +20,10 @@ DELETE http://localhost:4000/teams/627bb72c5a24a071eca01068
 
 ###
 
-PATCH http://localhost:4000/leagues/6271386f7ada02bdf9e79c87
+PATCH http://localhost:4000/leagues/6283978d65e8a8bea4c367c0
 Content-Type: application/json
 
 {
-    "name": "Premier League"
+    "name": "Liga NOS",
+    "country": "Portugal"
 }
