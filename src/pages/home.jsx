@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from "react";
-import "../database/team.js";
+import React, { useEffect, useState } from 'react';
 
-import { Button, Container } from "react-bootstrap";
+import { Button, Container } from 'react-bootstrap';
+
+import PremierLeague from './premierleague';
 
 function Home() {
+    const [items, setItems] = useState([]);
+
     useEffect(() => {
         fetchItems();
     }, []);
 
-    const [items, setItems] = useState([]);
-
     const fetchItems = async () => {
-        const data = await fetch("/leagues");
+        const data = await fetch('http://localhost:4000/leagues');
         const items = await data.json();
         setItems(items);
+
+        console.log(items.item.name);
     };
 
     return (

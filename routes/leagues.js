@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const League = require("../src/database/league");
+const League = require('../src/database/league');
 
 // Getting all
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const leagues = await League.find();
         res.json(leagues);
@@ -13,12 +13,12 @@ router.get("/", async (req, res) => {
 });
 
 // Getting one
-router.get("/:id", getLeague, (req, res) => {
+router.get('/:id', getLeague, (req, res) => {
     res.json(res.league);
 });
 
 // Creating one
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
     const league = new League({
         name: req.body.name,
         country: req.body.country,
@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
 });
 
 // Updating one
-router.patch("/:id", getLeague, async (req, res) => {
+router.patch('/:id', getLeague, async (req, res) => {
     if (req.body.name != null) {
         res.league.name = req.body.name;
     }
@@ -50,10 +50,10 @@ router.patch("/:id", getLeague, async (req, res) => {
 });
 
 // Deleting one
-router.delete("/:id", getLeague, async (req, res) => {
+router.delete('/:id', getLeague, async (req, res) => {
     try {
         await res.league.remove();
-        res.json({ message: "Deleted League" });
+        res.json({ message: 'Deleted League' });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -66,7 +66,7 @@ async function getLeague(req, res, next) {
         league = await League.findById(req.params.id);
 
         if (league == null) {
-            return res.status(404).json({ message: "Cannot find league" });
+            return res.status(404).json({ message: 'Cannot find league' });
         }
     } catch (err) {
         return res.status(500).json({ message: err.message });
