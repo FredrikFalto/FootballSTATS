@@ -3,8 +3,6 @@ import Axios from 'axios';
 
 import { Button, Container } from 'react-bootstrap';
 
-// import PremierLeague from './premierleague';
-
 const url = 'http://localhost:4000';
 
 function Home() {
@@ -31,7 +29,6 @@ function Home() {
                             <div className="col-lg-3"></div>
                         </div>
                     );
-                    // return <p key={item._id}>{item.name}</p>;
                 });
 
                 setItems(ligor);
