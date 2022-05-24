@@ -1,7 +1,11 @@
 import React from 'react';
 
 function PremierLeague() {
-    return <div></div>;
+    return (
+        <div>
+            <h1>Premier League</h1>
+        </div>
+    );
 }
 
 export default PremierLeague;

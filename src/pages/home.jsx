@@ -18,7 +18,13 @@ function Home() {
                         <div key={item._id} className="row mt-2">
                             <div className="col-lg-3"></div>
                             <div className="col-lg-6">
-                                <Button variant="danger" className="col-lg-12">
+                                <Button
+                                    variant="danger"
+                                    className="col-lg-12"
+                                    href={item.name
+                                        .replace(/\s/g, '')
+                                        .toLowerCase()}
+                                >
                                     {item.name}
                                 </Button>
                             </div>
