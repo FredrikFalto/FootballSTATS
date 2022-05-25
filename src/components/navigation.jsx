@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Axios from 'axios';
 
 import {
     Navbar,
@@ -9,7 +10,35 @@ import {
     Button,
 } from 'react-bootstrap';
 
+const url = 'http://localhost:4000';
+
 function Navigation() {
+    const [items, setItems] = useState([]);
+
+    const getLeagues = () => {
+        Axios.get(url + '/leagues')
+            .then((res) => {
+                const ligor = res.data.map((item) => {
+                    return (
+                        <Nav.Link
+                            key={item._id}
+                            href={item.name.replace(/\s/g, '').toLowerCase()}
+                        >
+                            {item.name}
+                        </Nav.Link>
+                    );
+                });
+
+                setItems(ligor);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
+
+    // Calls the getLeagues function to render nav links for every league in the database.
+    getLeagues();
+
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
@@ -23,10 +52,7 @@ function Navigation() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/premier%20league">
-                            Premier League
-                        </Nav.Link>
-                        <Nav.Link href="#action2">La Liga</Nav.Link>
+                        {items}
                     </Nav>
                     <Form className="d-flex">
                         <FormControl
