@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
 import {
@@ -15,10 +15,10 @@ const url = 'http://localhost:4000';
 function Navigation() {
     const [items, setItems] = useState([]);
 
-    const getLeagues = () => {
+    useEffect(() => {
         Axios.get(url + '/leagues')
             .then((res) => {
-                const ligor = res.data.map((item) => {
+                const leagues = res.data.map((item) => {
                     return (
                         <Nav.Link
                             key={item._id}
@@ -29,15 +29,12 @@ function Navigation() {
                     );
                 });
 
-                setItems(ligor);
+                setItems(leagues);
             })
             .catch((err) => {
                 console.log(err);
             });
-    };
-
-    // Calls the getLeagues function to render nav links for every league in the database.
-    getLeagues();
+    }, []);
 
     return (
         <Navbar bg="light" expand="lg">

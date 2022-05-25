@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
 import { Button, Container } from 'react-bootstrap';
@@ -8,10 +8,10 @@ const url = 'http://localhost:4000';
 function Home() {
     const [items, setItems] = useState([]);
 
-    const getLeagues = () => {
+    useEffect(() => {
         Axios.get(url + '/leagues')
             .then((res) => {
-                const ligor = res.data.map((item) => {
+                const leagues = res.data.map((item) => {
                     return (
                         <div key={item._id} className="row mt-2">
                             <div className="col-lg-3"></div>
@@ -31,15 +31,12 @@ function Home() {
                     );
                 });
 
-                setItems(ligor);
+                setItems(leagues);
             })
             .catch((err) => {
                 console.log(err);
             });
-    };
-
-    // Calls the getLeagues function to render buttons for every league in the database.
-    getLeagues();
+    }, []);
 
     return (
         <div>

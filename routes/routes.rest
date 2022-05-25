@@ -6,12 +6,12 @@ GET http://localhost:4000/leagues/6271386f7ada02bdf9e79c87
 
 ###
 
-POST http://localhost:4000/leagues
+POST http://localhost:4000/teams
 Content-Type: application/json
 
 {
-    "name": "Ligue 1",
-    "country": "France"
+    "name": "Wolves",
+    "league": "6271386f7ada02bdf9e79c87"
 }
 
 ###
