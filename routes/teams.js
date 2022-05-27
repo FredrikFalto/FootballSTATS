@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Team = require("../src/database/team");
+const Team = require('../src/database/team');
 
 // Getting all
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const teams = await Team.find();
         res.json(teams);
@@ -13,12 +13,12 @@ router.get("/", async (req, res) => {
 });
 
 // Getting one
-router.get("/:id", getTeam, (req, res) => {
+router.get('/:id', getTeam, (req, res) => {
     res.json(res.team);
 });
 
 // Creating one
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
     const team = new Team({
         name: req.body.name,
         league: req.body.league,
@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
 });
 
 // Updating one
-router.patch("/:id", getTeam, async (req, res) => {
+router.patch('/:id', getTeam, async (req, res) => {
     if (req.body.name != null) {
         res.team.name = req.body.name;
     }
@@ -50,10 +50,10 @@ router.patch("/:id", getTeam, async (req, res) => {
 });
 
 // Deleting one
-router.delete("/:id", getTeam, async (req, res) => {
+router.delete('/:id', getTeam, async (req, res) => {
     try {
         await res.team.remove();
-        res.json({ message: "Deleted Team" });
+        res.json({ message: 'Deleted Team' });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -66,7 +66,7 @@ async function getTeam(req, res, next) {
         team = await Team.findById(req.params.id);
 
         if (team == null) {
-            return res.status(404).json({ message: "Cannot find team" });
+            return res.status(404).json({ message: 'Cannot find team' });
         }
     } catch (err) {
         return res.status(500).json({ message: err.message });
