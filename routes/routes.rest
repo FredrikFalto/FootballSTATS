@@ -1,4 +1,4 @@
-GET http://localhost:4000/teams
+GET http://localhost:4000/leagues
 
 ###
 
@@ -10,13 +10,13 @@ POST http://localhost:4000/teams
 Content-Type: application/json
 
 {
-    "name": "Real Sociedad",
-    "league": "6283974465e8a8bea4c367b8",
-    "mp": 38,
-    "wins": 17,
-    "draws": 11,
-    "losses": 10,
-    "points": 62
+    "name": "Vizela",
+    "league": "6283978d65e8a8bea4c367c0",
+    "mp": 34,
+    "wins": 7,
+    "draws": 12,
+    "losses": 15,
+    "points": 33
 }
 
 ###
