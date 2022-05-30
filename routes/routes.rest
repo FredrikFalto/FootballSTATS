@@ -11,12 +11,17 @@ Content-Type: application/json
 
 {
     "name": "Wolves",
-    "league": "6271386f7ada02bdf9e79c87"
+    "league": "6271386f7ada02bdf9e79c87",
+    "mp": 38,
+    "wins": 15,
+    "draws": 6,
+    "losses": 17,
+    "points": 51
 }
 
 ###
 
-DELETE http://localhost:4000/teams/627bb72c5a24a071eca01068
+DELETE http://localhost:4000/teams
 
 ###
 

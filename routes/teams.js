@@ -22,6 +22,11 @@ router.post('/', async (req, res) => {
     const team = new Team({
         name: req.body.name,
         league: req.body.league,
+        mp: req.body.mp,
+        wins: req.body.wins,
+        draws: req.body.draws,
+        losses: req.body.losses,
+        points: req.body.points,
     });
 
     try {
