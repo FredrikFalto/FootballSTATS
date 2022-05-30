@@ -7,6 +7,7 @@ import PremierLeague from './pages/premierleague';
 import LaLiga from './pages/laliga';
 import Bundesliga from './pages/bundesliga';
 import SerieA from './pages/seriea';
+import LigaNOS from './pages/liganos';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/laliga" element={<LaLiga />} />
                 <Route path="/bundesliga" element={<Bundesliga />} />
                 <Route path="/seriea" element={<SerieA />} />
+                <Route path="/liganos" element={<LigaNOS />} />
             </Routes>
         </Router>
     );
