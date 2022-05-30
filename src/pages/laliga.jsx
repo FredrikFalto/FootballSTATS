@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 const url = 'http://localhost:4000';
 let counter = 0;
 
-function PremierLeague() {
+function LaLiga() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ function PremierLeague() {
                     // Sort function to put the team with the most points in the top of the table
                     .sort((a, b) => (a.points > b.points ? -1 : 1))
                     .map((item) => {
-                        if (item.league === '6271386f7ada02bdf9e79c87') {
+                        if (item.league === '6283974465e8a8bea4c367b8') {
                             counter++;
 
                             return (
@@ -42,7 +42,7 @@ function PremierLeague() {
 
     return (
         <Container className="text-center">
-            <h1 className="mt-3 mb-4">Premier League</h1>
+            <h1 className="mt-3 mb-4">La Liga</h1>
             <table className="table table-hover">
                 <thead>
                     <tr className="table-active">
@@ -61,4 +61,4 @@ function PremierLeague() {
     );
 }
 
-export default PremierLeague;
+export default LaLiga;

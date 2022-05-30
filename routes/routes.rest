@@ -10,13 +10,13 @@ POST http://localhost:4000/teams
 Content-Type: application/json
 
 {
-    "name": "Wolves",
-    "league": "6271386f7ada02bdf9e79c87",
+    "name": "Real Sociedad",
+    "league": "6283974465e8a8bea4c367b8",
     "mp": 38,
-    "wins": 15,
-    "draws": 6,
-    "losses": 17,
-    "points": 51
+    "wins": 17,
+    "draws": 11,
+    "losses": 10,
+    "points": 62
 }
 
 ###
