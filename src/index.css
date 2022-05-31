@@ -17,14 +17,18 @@ code {
     background-image: url(./img/Premier-League.jpeg);
     background-size: cover;
     background-position: 50% 55%;
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
 .laliga {
     height: 25vh;
-    background-image: url(./img/laliga_2016-21_patch.jpeg);
-    background-size: contain;
+    background-image: url(./img/laliga_2016-21_patch.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 55%;
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
 .seriea {
@@ -32,6 +36,8 @@ code {
     background-image: url(./img/serie-a.jpeg);
     background-size: cover;
     background-position: 50% 55%;
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
 .bundesliga {
@@ -39,11 +45,25 @@ code {
     background-image: url(./img/bundesliga.webp);
     background-size: cover;
     background-position: 50% 50%;
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
 .liganos {
     height: 25vh;
-    background-image: url(./img/liganos.png);
+    background-image: url(./img/liga-nos.png);
     background-size: cover;
-    background-position: 50% 65%;
+    background-position: 50% 50%;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.league:hover {
+    height: 30vh;
+    filter: none;
+    transform: scaleY(1);
+    transform-origin: inherit;
+    transition: 0.3s;
+    border: solid 1px black;
+    margin: 1vh 0;
 }
