@@ -1,43 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import React from 'react';
 
-import { Button, Container } from 'react-bootstrap';
-
-const url = 'http://localhost:4000';
+import { Container } from 'react-bootstrap';
 
 function Home() {
-    const [items, setItems] = useState([]);
-
-    useEffect(() => {
-        Axios.get(url + '/leagues')
-            .then((res) => {
-                const leagues = res.data.map((item) => {
-                    return (
-                        <div key={item._id} className="row mt-2">
-                            <div className="col-lg-3"></div>
-                            <div className="col-lg-6">
-                                <Button
-                                    variant="danger"
-                                    className="col-lg-12"
-                                    href={item.name
-                                        .replace(/\s/g, '')
-                                        .toLowerCase()}
-                                >
-                                    {item.name}
-                                </Button>
-                            </div>
-                            <div className="col-lg-3"></div>
-                        </div>
-                    );
-                });
-
-                setItems(leagues);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, []);
-
     return (
         <div>
             <Container>
@@ -50,7 +15,25 @@ function Home() {
                     </h4>
                 </div>
 
-                {items}
+                <div className="row m-2">
+                    <div className="col-lg-12 premierleague rounded"></div>
+                </div>
+
+                <div className="row m-2">
+                    <div className="col-lg-12 laliga rounded"></div>
+                </div>
+
+                <div className="row m-2">
+                    <div className="col-lg-12 seriea rounded"></div>
+                </div>
+
+                <div className="row m-2">
+                    <div className="col-lg-12 bundesliga rounded"></div>
+                </div>
+
+                <div className="row m-2">
+                    <div className="col-lg-12 liganos rounded"></div>
+                </div>
             </Container>
         </div>
     );

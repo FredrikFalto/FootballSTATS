@@ -1,13 +1,49 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+.premierleague {
+    height: 25vh;
+    background-image: url(./img/Premier-League.jpeg);
+    background-size: cover;
+    background-position: 50% 55%;
+}
+
+.laliga {
+    height: 25vh;
+    background-image: url(./img/laliga_2016-21_patch.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 55%;
+}
+
+.seriea {
+    height: 25vh;
+    background-image: url(./img/serie-a.jpeg);
+    background-size: cover;
+    background-position: 50% 55%;
+}
+
+.bundesliga {
+    height: 25vh;
+    background-image: url(./img/bundesliga.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.liganos {
+    height: 25vh;
+    background-image: url(./img/liganos.png);
+    background-size: cover;
+    background-position: 50% 65%;
 }
