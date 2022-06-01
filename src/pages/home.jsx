@@ -17,31 +17,31 @@ function Home() {
 
                 <div className="row m-2">
                     <a href="/premierleague">
-                        <div className="col-lg-12 premierleague rounded league"></div>
+                        <div className="col-12 premierleague rounded league"></div>
                     </a>
                 </div>
 
                 <div className="row m-2">
                     <a href="/laliga">
-                        <div className="col-lg-12 laliga rounded league"></div>
+                        <div className="col-12 laliga rounded league"></div>
                     </a>
                 </div>
 
                 <div className="row m-2">
                     <a href="bundesliga">
-                        <div className="col-lg-12 bundesliga rounded league"></div>
+                        <div className="col-12 bundesliga rounded league"></div>
                     </a>
                 </div>
 
                 <div className="row m-2">
                     <a href="/seriea">
-                        <div className="col-lg-12 seriea rounded league"></div>
+                        <div className="col-12 seriea rounded league"></div>
                     </a>
                 </div>
 
                 <div className="row m-2">
                     <a href="/liganos">
-                        <div className="col-lg-12 liganos rounded league"></div>
+                        <div className="col-12 liganos rounded league"></div>
                     </a>
                 </div>
             </Container>

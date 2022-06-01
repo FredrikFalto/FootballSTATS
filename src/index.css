@@ -13,7 +13,7 @@ code {
 }
 
 .premierleague {
-    height: 25vh;
+    height: 27vh;
     background-image: url(./img/Premier-League.jpeg);
     background-size: cover;
     background-position: 50% 55%;
@@ -22,7 +22,7 @@ code {
 }
 
 .laliga {
-    height: 25vh;
+    height: 27vh;
     background-image: url(./img/laliga_2016-21_patch.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ code {
 }
 
 .seriea {
-    height: 25vh;
+    height: 27vh;
     background-image: url(./img/serie-a.jpeg);
     background-size: cover;
     background-position: 50% 55%;
@@ -41,7 +41,7 @@ code {
 }
 
 .bundesliga {
-    height: 25vh;
+    height: 27vh;
     background-image: url(./img/bundesliga.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -50,7 +50,7 @@ code {
 }
 
 .liganos {
-    height: 25vh;
+    height: 27vh;
     background-image: url(./img/liga-nos.png);
     background-size: cover;
     background-position: 50% 50%;
@@ -59,11 +59,90 @@ code {
 }
 
 .league:hover {
-    height: 30vh;
+    height: 35vh;
     filter: none;
     transform: scaleY(1);
     transform-origin: inherit;
     transition: 0.3s;
     border: solid 1px black;
     margin: 1vh 0;
+    background-position: 50% 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .league:hover {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .league:hover {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .premierleague {
+        height: 30vh;
+        background-position: 50% 55%;
+    }
+
+    .laliga {
+        height: 30vh;
+        background-position: 50% 58%;
+    }
+
+    .laliga:hover {
+        background-position: 50% 55%;
+    }
+
+    .bundesliga {
+        height: 30vh;
+        background-position: 50% 50%;
+    }
+
+    .seriea {
+        height: 30vh;
+        background-position: 50% 65%;
+    }
+
+    .liganos {
+        height: 30vh;
+        background-position: 50% 54%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .premierleague {
+        height: 35vh;
+        background-position: 50% 56%;
+    }
+
+    .laliga {
+        height: 35vh;
+        background-position: 50% 58%;
+    }
+
+    .laliga:hover {
+        background-position: 50% 55%;
+    }
+
+    .bundesliga {
+        height: 35vh;
+        background-position: 50% 60%;
+    }
+
+    .seriea {
+        height: 35vh;
+        background-position: 50% 65%;
+    }
+
+    .liganos {
+        height: 35vh;
+        background-position: 50% 58%;
+    }
+
+    .league:hover {
+        height: 55vh;
+    }
 }
