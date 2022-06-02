@@ -7,7 +7,7 @@ function Home() {
         <div>
             <Container>
                 <div className="row">
-                    <h1 className="text-center text-dark mt-3">
+                    <h1 className="text-center text-danger mt-3">
                         Welcome to FootballSTATS
                     </h1>
                     <h4 className="text-center text-dark">

@@ -31,20 +31,20 @@ code {
     transition: 0.3s;
 }
 
-.seriea {
-    height: 27vh;
-    background-image: url(./img/serie-a.jpeg);
-    background-size: cover;
-    background-position: 50% 55%;
-    filter: grayscale(100%);
-    transition: 0.3s;
-}
-
 .bundesliga {
     height: 27vh;
     background-image: url(./img/bundesliga.webp);
     background-size: cover;
     background-position: 50% 50%;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.seriea {
+    height: 27vh;
+    background-image: url(./img/serie-a.jpeg);
+    background-size: cover;
+    background-position: 50% 55%;
     filter: grayscale(100%);
     transition: 0.3s;
 }
