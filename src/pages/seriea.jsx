@@ -42,7 +42,7 @@ function SerieA() {
 
     return (
         <Container className="text-center">
-            <h1 className="mt-3 mb-4">Serie A</h1>
+            <h1 className="text-danger mt-3 mb-4">Serie A</h1>
             <table className="table table-hover">
                 <thead>
                     <tr className="table-active">
