@@ -53,12 +53,12 @@ function Navigation() {
                     </Nav>
                     <Form className="d-flex">
                         <FormControl
-                            type="search"
+                            type="text"
                             placeholder="Search"
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="danger">Search</Button>
+                        {/* <Button variant="danger">Search</Button> */}
                     </Form>
                 </Navbar.Collapse>
             </Container>

@@ -69,7 +69,18 @@ code {
     background-position: 50% 50%;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+/* Make colors visible all the time when not using a laptop */
+@media (min-width: 1px) and (max-width: 768px) {
+    .league {
+        filter: none;
+    }
+
+    .league:hover {
+        height: 27vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
     .league:hover {
         height: 35vh;
     }

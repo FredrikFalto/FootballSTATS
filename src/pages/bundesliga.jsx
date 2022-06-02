@@ -43,20 +43,26 @@ function Bundesliga() {
     return (
         <Container className="text-center">
             <h1 className="text-danger mt-3 mb-4">Bundesliga</h1>
-            <table className="table table-hover">
-                <thead>
-                    <tr className="table-active">
-                        <th scope="col">#</th>
-                        <th scope="col">TEAM</th>
-                        <th scope="col">MP</th>
-                        <th scope="col">W</th>
-                        <th scope="col">D</th>
-                        <th scope="col">L</th>
-                        <th scope="col">PTS</th>
-                    </tr>
-                </thead>
-                <tbody>{items}</tbody>
-            </table>
+            <div className="row">
+                <div className="col-1"></div>
+                <div className="col-lg-10 col-sm-12">
+                    <table className="table table-hover">
+                        <thead>
+                            <tr className="table-active">
+                                <th scope="col">#</th>
+                                <th scope="col">TEAM</th>
+                                <th scope="col">MP</th>
+                                <th scope="col">W</th>
+                                <th scope="col">D</th>
+                                <th scope="col">L</th>
+                                <th scope="col">PTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>{items}</tbody>
+                    </table>
+                </div>
+                <div className="col-1"></div>
+            </div>
         </Container>
     );
 }
