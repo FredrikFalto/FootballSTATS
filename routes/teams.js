@@ -45,6 +45,21 @@ router.patch('/:id', getTeam, async (req, res) => {
     if (req.body.league != null) {
         res.team.league = req.body.league;
     }
+    if (req.body.mp != null) {
+        res.team.mp = req.body.mp;
+    }
+    if (req.body.wins != null) {
+        res.team.wins = req.body.wins;
+    }
+    if (req.body.draws != null) {
+        res.team.draws = req.body.draws;
+    }
+    if (req.body.losses != null) {
+        res.team.losses = req.body.losses;
+    }
+    if (req.body.points != null) {
+        res.team.points = req.body.points;
+    }
 
     try {
         const updatedTeam = await res.team.save();
@@ -68,7 +83,7 @@ router.delete('/:id', getTeam, async (req, res) => {
 async function getTeam(req, res, next) {
     let team;
     try {
-        team = await Team.findById(req.params.name);
+        team = await Team.findById(req.params.id);
 
         if (team == null) {
             return res.status(404).json({ message: 'Cannot find team' });

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const leagueSchema = new mongoose.Schema({
     name: {
@@ -9,6 +9,10 @@ const leagueSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    teams: {
+        type: Array,
+        required: true,
+    },
 });
 
-module.exports = mongoose.model("League", leagueSchema);
+module.exports = mongoose.model('League', leagueSchema);

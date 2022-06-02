@@ -1,8 +1,8 @@
-GET http://localhost:4000/teams
+GET http://localhost:4000/leagues
 
 ###
 
-GET http://localhost:4000/leagues/6271386f7ada02bdf9e79c87
+GET http://localhost:4000/leagues/
 
 ###
 
