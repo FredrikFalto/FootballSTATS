@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:4000/teams
+DELETE http://localhost:4000/leagues/6298d6a5b88f81fc003ffdd7
 
 ###
 

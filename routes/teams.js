@@ -79,7 +79,7 @@ router.delete('/:id', getTeam, async (req, res) => {
     }
 });
 
-// Search
+// Find specific team for above functions
 async function getTeam(req, res, next) {
     let team;
     try {

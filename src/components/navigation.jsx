@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
-import {
-    Navbar,
-    Nav,
-    Container,
-    Form,
-    FormControl,
-    Button,
-} from 'react-bootstrap';
+import { Navbar, Nav, Container, Form, FormControl } from 'react-bootstrap';
 
 const url = 'http://localhost:4000';
 
 function Navigation() {
     const [items, setItems] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         Axios.get(url + '/leagues')
@@ -57,8 +51,10 @@ function Navigation() {
                             placeholder="Search"
                             className="me-2"
                             aria-label="Search"
+                            onChange={(event) => {
+                                setSearchTerm(event.target.value);
+                            }}
                         />
-                        {/* <Button variant="danger">Search</Button> */}
                     </Form>
                 </Navbar.Collapse>
             </Container>

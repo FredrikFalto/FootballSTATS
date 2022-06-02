@@ -59,7 +59,7 @@ code {
 }
 
 .league:hover {
-    height: 35vh;
+    height: 37vh;
     filter: none;
     transform: scaleY(1);
     transform-origin: inherit;
@@ -154,6 +154,6 @@ code {
     }
 
     .league:hover {
-        height: 55vh;
+        height: 40vh;
     }
 }

@@ -59,7 +59,7 @@ router.delete('/:id', getLeague, async (req, res) => {
     }
 });
 
-// Search
+// Find specific team for above functions
 async function getLeague(req, res, next) {
     let league;
     try {
