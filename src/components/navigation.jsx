@@ -17,10 +17,12 @@ function Navigation() {
     const [teams, setTeams] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [searchOutput, setSearchOutput] = useState([]);
+    const [leagueSearch, setLeagueSearch] = useState([]);
 
     useEffect(() => {
         Axios.get(url + '/leagues')
             .then((res) => {
+                setLeagueSearch(res.data);
                 const leagues = res.data.map((item) => {
                     return (
                         <Nav.Link
@@ -75,22 +77,15 @@ function Navigation() {
                             >
                                 {leagues}
                             </Nav>
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                onChange={(event) => {
-                                    setSearchTerm(event.target.value);
-                                }}
-                            />
                             <Form className="d-flex">
                                 <FormControl
                                     type="text"
                                     placeholder="Search"
                                     className="me-2"
                                     aria-label="Search"
-                                    // onChange={(event) => {
-                                    //     setSearchTerm(event.target.value);
-                                    // }}
+                                    onChange={(event) => {
+                                        setSearchTerm(event.target.value);
+                                    }}
                                 />
                             </Form>
                         </Navbar.Collapse>
@@ -99,14 +94,46 @@ function Navigation() {
             </div>
 
             <div className="d-flex justify-content-center justify-content-lg-end">
-                {searchOutput.map((item) => {
-                    <Dropdown.Item key={item._id}>{item.name}</Dropdown.Item>;
-                })}
                 <Dropdown.Menu className="searchDropdown" show>
-                    <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-                    <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-                    <Dropdown.Item eventKey="3">Orange</Dropdown.Item>
-                    <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+                    {searchOutput.map((item) => {
+                        if (item.league === '6271386f7ada02bdf9e79c87') {
+                            return (
+                                <Dropdown.Item
+                                    key={item._id}
+                                    href="/premierleague"
+                                >
+                                    {item.name}
+                                </Dropdown.Item>
+                            );
+                        } else if (item.league === '6283974465e8a8bea4c367b8') {
+                            return (
+                                <Dropdown.Item key={item._id} href="/laliga">
+                                    {item.name}
+                                </Dropdown.Item>
+                            );
+                        } else if (item.league === '6283975a65e8a8bea4c367ba') {
+                            return (
+                                <Dropdown.Item
+                                    key={item._id}
+                                    href="/bundesliga"
+                                >
+                                    {item.name}
+                                </Dropdown.Item>
+                            );
+                        } else if (item.league === '6283977a65e8a8bea4c367be') {
+                            return (
+                                <Dropdown.Item key={item._id} href="/seriea">
+                                    {item.name}
+                                </Dropdown.Item>
+                            );
+                        } else if (item.league === '6283978d65e8a8bea4c367c0') {
+                            return (
+                                <Dropdown.Item key={item._id} href="/liganos">
+                                    {item.name}
+                                </Dropdown.Item>
+                            );
+                        }
+                    })}
                 </Dropdown.Menu>
             </div>
         </div>

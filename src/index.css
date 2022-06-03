@@ -73,6 +73,10 @@ code {
     width: 22vw;
 }
 
+.searchDropdown {
+    border: none;
+}
+
 /* Make colors visible all the time when not using a laptop */
 @media (min-width: 1px) and (max-width: 768px) {
     .league {
