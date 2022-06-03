@@ -8,14 +8,34 @@ import {
     FloatingLabel,
     Button,
 } from 'react-bootstrap';
-import e from 'express';
 
 const url = 'http://localhost:4000';
 let counter = 0;
 
 function PremierLeague() {
+    const [name, setName] = useState('');
+    const [mp, setMp] = useState('');
+    const [wins, setWins] = useState('');
+    const [draws, setDraws] = useState('');
+    const [losses, setLosses] = useState('');
+    const [points, setPoints] = useState('');
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        try {
+            const resp = await Axios.post(url + '/teams', {
+                name: name,
+                league: '6271386f7ada02bdf9e79c87',
+                mp: mp,
+                wins: wins,
+                draws: draws,
+                losses: losses,
+                points: points,
+            });
+        } catch (error) {
+            console.log(error.response);
+        }
     };
 
     const [items, setItems] = useState([]);
@@ -90,8 +110,10 @@ function PremierLeague() {
                                 <FormControl
                                     className="mb-2"
                                     type="text"
-                                    id="name"
+                                    name="name"
                                     placeholder="Name"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </FloatingLabel>
 
@@ -102,49 +124,10 @@ function PremierLeague() {
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    id="mp"
+                                    name="mp"
                                     placeholder="Matches Played"
-                                />
-                            </FloatingLabel>
-
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Draws"
-                            >
-                                <FormControl
-                                    className="mb-2"
-                                    type="number"
-                                    id="draws"
-                                    Points
-                                    placeholder="Draws"
-                                />
-                            </FloatingLabel>
-
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Points"
-                            >
-                                <FormControl
-                                    className="mb-2"
-                                    type="number"
-                                    id="points"
-                                    placeholder="Points"
-                                />
-                            </FloatingLabel>
-                        </Form.Group>
-
-                        <Form.Group className="mb-3 mx-1 w-50">
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="League"
-                            >
-                                <FormControl
-                                    className="mb-2"
-                                    type="text"
-                                    value={'6271386f7ada02bdf9e79c87'}
-                                    id="name"
-                                    placeholder="Name"
-                                    disabled
+                                    value={mp}
+                                    onChange={(e) => setMp(e.target.value)}
                                 />
                             </FloatingLabel>
 
@@ -155,8 +138,26 @@ function PremierLeague() {
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    id="wins"
+                                    name="wins"
                                     placeholder="Wins"
+                                    value={wins}
+                                    onChange={(e) => setWins(e.target.value)}
+                                />
+                            </FloatingLabel>
+                        </Form.Group>
+
+                        <Form.Group className="mb-3 mx-1 w-50">
+                            <FloatingLabel
+                                controlId="floatingName"
+                                label="Draws"
+                            >
+                                <FormControl
+                                    className="mb-2"
+                                    type="number"
+                                    name="draws"
+                                    placeholder="Draws"
+                                    value={draws}
+                                    onChange={(e) => setDraws(e.target.value)}
                                 />
                             </FloatingLabel>
 
@@ -167,8 +168,24 @@ function PremierLeague() {
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    id="losses"
+                                    name="losses"
                                     placeholder="Losses"
+                                    value={losses}
+                                    onChange={(e) => setLosses(e.target.value)}
+                                />
+                            </FloatingLabel>
+
+                            <FloatingLabel
+                                controlId="floatingName"
+                                label="Points"
+                            >
+                                <FormControl
+                                    className="mb-2"
+                                    type="number"
+                                    name="points"
+                                    placeholder="Points"
+                                    value={points}
+                                    onChange={(e) => setPoints(e.target.value)}
                                 />
                             </FloatingLabel>
 
