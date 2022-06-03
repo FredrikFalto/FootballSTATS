@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
-import { Navbar, Nav, Container, Form, FormControl } from 'react-bootstrap';
+import {
+    Navbar,
+    Nav,
+    Container,
+    Form,
+    FormControl,
+    Dropdown,
+} from 'react-bootstrap';
 
 const url = 'http://localhost:4000';
 
 function Navigation() {
-    const [items, setItems] = useState([]);
+    const [leagues, setLeagues] = useState([]);
+    const [teams, setTeams] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [searchOutput, setSearchOutput] = useState([]);
 
     useEffect(() => {
         Axios.get(url + '/leagues')
@@ -23,42 +32,84 @@ function Navigation() {
                     );
                 });
 
-                setItems(leagues);
+                setLeagues(leagues);
             })
             .catch((err) => {
                 console.log(err);
             });
     }, []);
 
+    useEffect(() => {
+        Axios.get(url + '/teams')
+            .then((res) => {
+                setTeams(res.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, []);
+
+    useEffect(() => {
+        setSearchOutput([]);
+        teams.filter((value) => {
+            if (value.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                setSearchOutput((searchOutput) => [...searchOutput, value]);
+            }
+        });
+    }, [searchTerm]);
+
     return (
-        <Navbar bg="light" expand="lg">
-            <Container fluid>
-                <Navbar.Brand href="/" className="alert-danger">
-                    FootballSTATS
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav
-                        className="me-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                    >
-                        {items}
-                    </Nav>
-                    <Form className="d-flex">
-                        <FormControl
-                            type="text"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                            onChange={(event) => {
-                                setSearchTerm(event.target.value);
-                            }}
-                        />
-                    </Form>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <div>
+            <div>
+                <Navbar bg="light" expand="lg">
+                    <Container fluid>
+                        <Navbar.Brand href="/" className="alert-danger">
+                            FootballSTATS
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll">
+                            <Nav
+                                className="me-auto my-2 my-lg-0"
+                                style={{ maxHeight: '100px' }}
+                                navbarScroll
+                            >
+                                {leagues}
+                            </Nav>
+                            <input
+                                type="text"
+                                placeholder="Search"
+                                onChange={(event) => {
+                                    setSearchTerm(event.target.value);
+                                }}
+                            />
+                            <Form className="d-flex">
+                                <FormControl
+                                    type="text"
+                                    placeholder="Search"
+                                    className="me-2"
+                                    aria-label="Search"
+                                    // onChange={(event) => {
+                                    //     setSearchTerm(event.target.value);
+                                    // }}
+                                />
+                            </Form>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </div>
+
+            <div className="d-flex justify-content-center justify-content-lg-end">
+                {searchOutput.map((item) => {
+                    <Dropdown.Item key={item._id}>{item.name}</Dropdown.Item>;
+                })}
+                <Dropdown.Menu className="searchDropdown" show>
+                    <Dropdown.Item eventKey="1">Red</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
+                    <Dropdown.Item eventKey="3">Orange</Dropdown.Item>
+                    <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+                </Dropdown.Menu>
+            </div>
+        </div>
     );
 }
 

@@ -69,6 +69,10 @@ code {
     background-position: 50% 50%;
 }
 
+.searchDropdown {
+    width: 22vw;
+}
+
 /* Make colors visible all the time when not using a laptop */
 @media (min-width: 1px) and (max-width: 768px) {
     .league {
@@ -78,11 +82,19 @@ code {
     .league:hover {
         height: 27vh;
     }
+
+    .searchDropdown {
+        width: 100vw;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
     .league:hover {
         height: 35vh;
+    }
+
+    .searchDropdown {
+        width: 100vw;
     }
 }
 
