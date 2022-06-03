@@ -13,12 +13,43 @@ const url = 'http://localhost:4000';
 let counter = 0;
 
 function LigaNOS() {
+    const [id, setId] = useState('');
     const [name, setName] = useState('');
     const [mp, setMp] = useState('');
     const [wins, setWins] = useState('');
     const [draws, setDraws] = useState('');
     const [losses, setLosses] = useState('');
     const [points, setPoints] = useState('');
+
+    const editTeam = async (item) => {
+        setId(item._id);
+        setName(item.name);
+        setMp(item.mp);
+        setWins(item.wins);
+        setDraws(item.draws);
+        setLosses(item.losses);
+        setPoints(item.points);
+    };
+
+    const updateTeam = async () => {
+        try {
+            const res = await Axios.patch(url + '/teams/' + id, {
+                name: name,
+                league: '6271386f7ada02bdf9e79c87',
+                mp: mp,
+                wins: wins,
+                draws: draws,
+                losses: losses,
+                points: points,
+            });
+
+            alert('Team updated.');
+        } catch (error) {
+            console.log(error.response);
+        }
+
+        window.location.reload(false);
+    };
 
     const deleteTeam = async (id) => {
         if (window.confirm('Are you sure you want to delete?')) {
@@ -76,7 +107,10 @@ function LigaNOS() {
                                     <td>{item.losses}</td>
                                     <td>{item.points}</td>
                                     <td>
-                                        <button className="btn btn-danger mx-lg-1">
+                                        <button
+                                            className="btn btn-danger mx-lg-1"
+                                            onClick={() => editTeam(item)}
+                                        >
                                             Edit
                                         </button>
                                         <button
@@ -171,6 +205,15 @@ function LigaNOS() {
                                     onChange={(e) => setWins(e.target.value)}
                                 />
                             </FloatingLabel>
+
+                            <Button
+                                className="w-50 h-25"
+                                variant="danger"
+                                type="submit"
+                                onClick={updateTeam}
+                            >
+                                Update
+                            </Button>
                         </Form.Group>
 
                         <Form.Group className="mb-3 mx-1 w-50">

@@ -13,6 +13,7 @@ const url = 'http://localhost:4000';
 let counter = 0;
 
 function PremierLeague() {
+    const [id, setId] = useState('');
     const [name, setName] = useState('');
     const [mp, setMp] = useState('');
     const [wins, setWins] = useState('');
@@ -21,27 +22,18 @@ function PremierLeague() {
     const [points, setPoints] = useState('');
 
     const editTeam = async (item) => {
-        if (name == null) {
-            setName(item.name);
-        }
-        if (mp == null) {
-            setMp(item.mp);
-        }
-        if (wins == null) {
-            setWins(item.wins);
-        }
-        if (draws == null) {
-            setDraws(item.draws);
-        }
-        if (losses == null) {
-            setLosses(item.losses);
-        }
-        if (points == null) {
-            setPoints(item.points);
-        }
+        setId(item._id);
+        setName(item.name);
+        setMp(item.mp);
+        setWins(item.wins);
+        setDraws(item.draws);
+        setLosses(item.losses);
+        setPoints(item.points);
+    };
 
+    const updateTeam = async () => {
         try {
-            const res = await Axios.put(url + '/teams/' + item._id, {
+            const res = await Axios.patch(url + '/teams/' + id, {
                 name: name,
                 league: '6271386f7ada02bdf9e79c87',
                 mp: mp,
@@ -50,26 +42,14 @@ function PremierLeague() {
                 losses: losses,
                 points: points,
             });
+
+            alert('Team updated.');
         } catch (error) {
             console.log(error.response);
         }
-    };
 
-    // const editTeam = async (id) => {
-    //     try {
-    //         const res = await Axios.put(url + '/teams/' + id, {
-    //             name: name,
-    //             // league: '6271386f7ada02bdf9e79c87',
-    //             mp: mp,
-    //             wins: wins,
-    //             draws: draws,
-    //             losses: losses,
-    //             points: points,
-    //         });
-    //     } catch (error) {
-    //         console.log(error.response);
-    //     }
-    // };
+        window.location.reload(false);
+    };
 
     const deleteTeam = async (id) => {
         if (window.confirm('Are you sure you want to delete?')) {
@@ -133,6 +113,8 @@ function PremierLeague() {
                                         >
                                             Edit
                                         </button>
+                                    </td>
+                                    <td>
                                         <button
                                             className="btn btn-danger"
                                             onClick={() => deleteTeam(item._id)}
@@ -168,8 +150,8 @@ function PremierLeague() {
                                 <th scope="col">D</th>
                                 <th scope="col">L</th>
                                 <th scope="col">PTS</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
                             </tr>
                         </thead>
                         <tbody>{items}</tbody>
@@ -183,7 +165,7 @@ function PremierLeague() {
             <div className="row">
                 <div className="col-1"></div>
                 <div className="col-lg-10 col-sm-12">
-                    <h4>Add a new team</h4>
+                    <h4>Add or edit a team</h4>
                     <Form className="d-flex">
                         <Form.Group className="mb-3 mx-1 w-50">
                             <FloatingLabel label="Name">
@@ -223,7 +205,7 @@ function PremierLeague() {
                                 className="w-50 h-25"
                                 variant="danger"
                                 type="submit"
-                                // onClick={updateTeam}
+                                onClick={updateTeam}
                             >
                                 Update
                             </Button>
