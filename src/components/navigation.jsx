@@ -19,6 +19,7 @@ function Navigation() {
     const [searchOutput, setSearchOutput] = useState([]);
     const [leagueSearch, setLeagueSearch] = useState([]);
 
+    // Fetching all leagues and creating Navigation links for each of them
     useEffect(() => {
         Axios.get(url + '/leagues')
             .then((res) => {
@@ -26,6 +27,7 @@ function Navigation() {
                     return (
                         <Nav.Link
                             key={item._id}
+                            // Taking league name and removing spaces to make better links
                             href={item.name.replace(/\s/g, '').toLowerCase()}
                         >
                             {item.name}
@@ -40,6 +42,7 @@ function Navigation() {
             });
     }, []);
 
+    // Fetching all teams for the search function
     useEffect(() => {
         Axios.get(url + '/teams')
             .then((res) => {
@@ -50,6 +53,7 @@ function Navigation() {
             });
     }, []);
 
+    // Search function for finding teams
     useEffect(() => {
         setSearchOutput([]);
         teams.filter((value) => {
@@ -92,6 +96,7 @@ function Navigation() {
                 </Navbar>
             </div>
 
+            {/* Links for the search results */}
             <div className="d-flex justify-content-center justify-content-lg-end">
                 <Dropdown.Menu className="searchDropdown" show>
                     {searchOutput.map((item) => {

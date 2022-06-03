@@ -17,7 +17,7 @@ router.get('/:id', getLeague, (req, res) => {
     res.json(res.league);
 });
 
-// Creating one
+// Create one
 router.post('/', async (req, res) => {
     const league = new League({
         name: req.body.name,
