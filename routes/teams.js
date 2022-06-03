@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
 });
 
 // Update
-router.patch('/:id', getTeam, async (req, res) => {
+router.put('/:id', getTeam, async (req, res) => {
     if (req.body.name != null) {
         res.team.name = req.body.name;
     }

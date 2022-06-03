@@ -21,6 +21,7 @@ function PremierLeague() {
     const [losses, setLosses] = useState('');
     const [points, setPoints] = useState('');
 
+    // Function for loading a teams information to the textboxes
     const editTeam = async (item) => {
         setId(item._id);
         setName(item.name);
@@ -31,9 +32,10 @@ function PremierLeague() {
         setPoints(item.points);
     };
 
+    // Function for editing a team
     const updateTeam = async () => {
         try {
-            const res = await Axios.patch(url + '/teams/' + id, {
+            const res = await Axios.put(url + '/teams/' + id, {
                 name: name,
                 league: '6271386f7ada02bdf9e79c87',
                 mp: mp,
@@ -48,9 +50,11 @@ function PremierLeague() {
             console.log(error.response);
         }
 
+        // Reload window after edit
         window.location.reload(false);
     };
 
+    // Function for deleting a team
     const deleteTeam = async (id) => {
         if (window.confirm('Are you sure you want to delete?')) {
             try {
@@ -61,10 +65,12 @@ function PremierLeague() {
                 console.log(error);
             }
 
+            // Reload window after delete
             window.location.reload(false);
         }
     };
 
+    // Function for creating a new team
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -87,6 +93,7 @@ function PremierLeague() {
 
     const [items, setItems] = useState([]);
 
+    // Load teams and create the table when the page loads
     useEffect(() => {
         Axios.get(url + '/teams')
             .then((res) => {
@@ -166,6 +173,8 @@ function PremierLeague() {
                 <div className="col-1"></div>
                 <div className="col-lg-10 col-sm-12">
                     <h4>Add or edit a team</h4>
+
+                    {/* Creates a Form for adding new teams and editing already existing ones */}
                     <Form className="d-flex">
                         <Form.Group className="mb-3 mx-1 w-50">
                             <FloatingLabel label="Name">
@@ -204,7 +213,6 @@ function PremierLeague() {
                             <Button
                                 className="w-50 h-25"
                                 variant="danger"
-                                type="submit"
                                 onClick={updateTeam}
                             >
                                 Update
