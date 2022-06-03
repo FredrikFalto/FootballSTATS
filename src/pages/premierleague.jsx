@@ -36,6 +36,8 @@ function PremierLeague() {
         } catch (error) {
             console.log(error.response);
         }
+
+        window.location.reload(false);
     };
 
     const [items, setItems] = useState([]);
