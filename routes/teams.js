@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Team = require('../src/database/team');
-const League = require('../src/database/league');
 
 // Get all teams
 router.get('/', async (req, res) => {

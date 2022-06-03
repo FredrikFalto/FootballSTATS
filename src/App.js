@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home';
 import Navigation from './components/navigation';
+import Footer from './components/footer';
 import PremierLeague from './pages/premierleague';
 import LaLiga from './pages/laliga';
 import Bundesliga from './pages/bundesliga';
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/seriea" element={<SerieA />} />
                 <Route path="/liganos" element={<LigaNOS />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };

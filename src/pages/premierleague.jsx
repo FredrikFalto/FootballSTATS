@@ -79,7 +79,7 @@ function PremierLeague() {
             <div className="row">
                 <div className="col-1"></div>
                 <div className="col-lg-10 col-sm-12">
-                    <table className="table table-hover">
+                    <table className="table table-hover mb-4">
                         <thead>
                             <tr className="table-active">
                                 <th scope="col">#</th>
