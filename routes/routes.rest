@@ -25,10 +25,15 @@ DELETE http://localhost:4000/leagues/6298d6a5b88f81fc003ffdd7
 
 ###
 
-PATCH http://localhost:4000/leagues/6283978d65e8a8bea4c367c0
+PATCH http://localhost:4000/teams/6294a8b35eec89a40e368c1f
 Content-Type: application/json
 
 {
-    "name": "Liga NOS",
-    "country": "Portugal"
+    "name": "Arsenal",
+    "league": "6271386f7ada02bdf9e79c87",
+    "mp": "38",
+    "wins": "22",
+    "draws": "3",
+    "losses": "13",
+    "points": "69"
 }

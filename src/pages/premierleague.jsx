@@ -20,6 +20,71 @@ function PremierLeague() {
     const [losses, setLosses] = useState('');
     const [points, setPoints] = useState('');
 
+    const editTeam = async (item) => {
+        if (name == null) {
+            setName(item.name);
+        }
+        if (mp == null) {
+            setMp(item.mp);
+        }
+        if (wins == null) {
+            setWins(item.wins);
+        }
+        if (draws == null) {
+            setDraws(item.draws);
+        }
+        if (losses == null) {
+            setLosses(item.losses);
+        }
+        if (points == null) {
+            setPoints(item.points);
+        }
+
+        try {
+            const res = await Axios.put(url + '/teams/' + item._id, {
+                name: name,
+                league: '6271386f7ada02bdf9e79c87',
+                mp: mp,
+                wins: wins,
+                draws: draws,
+                losses: losses,
+                points: points,
+            });
+        } catch (error) {
+            console.log(error.response);
+        }
+    };
+
+    // const editTeam = async (id) => {
+    //     try {
+    //         const res = await Axios.put(url + '/teams/' + id, {
+    //             name: name,
+    //             // league: '6271386f7ada02bdf9e79c87',
+    //             mp: mp,
+    //             wins: wins,
+    //             draws: draws,
+    //             losses: losses,
+    //             points: points,
+    //         });
+    //     } catch (error) {
+    //         console.log(error.response);
+    //     }
+    // };
+
+    const deleteTeam = async (id) => {
+        if (window.confirm('Are you sure you want to delete?')) {
+            try {
+                const res = await Axios.delete(url + '/teams/' + id).then(() =>
+                    alert('Team deleted from database.')
+                );
+            } catch (error) {
+                console.log(error);
+            }
+
+            window.location.reload(false);
+        }
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -61,6 +126,20 @@ function PremierLeague() {
                                     <td>{item.draws}</td>
                                     <td>{item.losses}</td>
                                     <td>{item.points}</td>
+                                    <td>
+                                        <button
+                                            className="btn btn-danger mx-lg-1"
+                                            onClick={() => editTeam(item)}
+                                        >
+                                            Edit
+                                        </button>
+                                        <button
+                                            className="btn btn-danger"
+                                            onClick={() => deleteTeam(item._id)}
+                                        >
+                                            Delete
+                                        </button>
+                                    </td>
                                 </tr>
                             );
                         }
@@ -89,6 +168,8 @@ function PremierLeague() {
                                 <th scope="col">D</th>
                                 <th scope="col">L</th>
                                 <th scope="col">PTS</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>{items}</tbody>
@@ -103,88 +184,79 @@ function PremierLeague() {
                 <div className="col-1"></div>
                 <div className="col-lg-10 col-sm-12">
                     <h4>Add a new team</h4>
-                    <Form onSubmit={handleSubmit} className="d-flex">
+                    <Form className="d-flex">
                         <Form.Group className="mb-3 mx-1 w-50">
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Name"
-                            >
+                            <FloatingLabel label="Name">
                                 <FormControl
                                     className="mb-2"
                                     type="text"
-                                    name="name"
+                                    id="name"
                                     placeholder="Name"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                 />
                             </FloatingLabel>
 
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Matches Played"
-                            >
+                            <FloatingLabel label="Matches Played">
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    name="mp"
+                                    id="mp"
                                     placeholder="Matches Played"
                                     value={mp}
                                     onChange={(e) => setMp(e.target.value)}
                                 />
                             </FloatingLabel>
 
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Wins"
-                            >
+                            <FloatingLabel label="Wins">
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    name="wins"
+                                    id="wins"
                                     placeholder="Wins"
                                     value={wins}
                                     onChange={(e) => setWins(e.target.value)}
                                 />
                             </FloatingLabel>
+
+                            <Button
+                                className="w-50 h-25"
+                                variant="danger"
+                                type="submit"
+                                // onClick={updateTeam}
+                            >
+                                Update
+                            </Button>
                         </Form.Group>
 
                         <Form.Group className="mb-3 mx-1 w-50">
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Draws"
-                            >
+                            <FloatingLabel label="Draws">
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    name="draws"
+                                    id="draws"
                                     placeholder="Draws"
                                     value={draws}
                                     onChange={(e) => setDraws(e.target.value)}
                                 />
                             </FloatingLabel>
 
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Losses"
-                            >
+                            <FloatingLabel label="Losses">
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    name="losses"
+                                    id="losses"
                                     placeholder="Losses"
                                     value={losses}
                                     onChange={(e) => setLosses(e.target.value)}
                                 />
                             </FloatingLabel>
 
-                            <FloatingLabel
-                                controlId="floatingName"
-                                label="Points"
-                            >
+                            <FloatingLabel label="Points">
                                 <FormControl
                                     className="mb-2"
                                     type="number"
-                                    name="points"
+                                    id="points"
                                     placeholder="Points"
                                     value={points}
                                     onChange={(e) => setPoints(e.target.value)}
@@ -195,8 +267,9 @@ function PremierLeague() {
                                 className="w-50 h-25"
                                 variant="danger"
                                 type="submit"
+                                onClick={handleSubmit}
                             >
-                                Submit
+                                Add team
                             </Button>
                         </Form.Group>
                     </Form>

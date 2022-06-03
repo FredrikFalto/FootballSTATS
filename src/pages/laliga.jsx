@@ -20,6 +20,20 @@ function LaLiga() {
     const [losses, setLosses] = useState('');
     const [points, setPoints] = useState('');
 
+    const deleteTeam = async (id) => {
+        if (window.confirm('Are you sure you want to delete?')) {
+            try {
+                const res = await Axios.delete(url + '/teams/' + id).then(() =>
+                    alert('Team deleted from database.')
+                );
+            } catch (error) {
+                console.log(error);
+            }
+
+            window.location.reload(false);
+        }
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -61,6 +75,17 @@ function LaLiga() {
                                     <td>{item.draws}</td>
                                     <td>{item.losses}</td>
                                     <td>{item.points}</td>
+                                    <td>
+                                        <button className="btn btn-danger mx-lg-1">
+                                            Edit
+                                        </button>
+                                        <button
+                                            className="btn btn-danger"
+                                            onClick={() => deleteTeam(item._id)}
+                                        >
+                                            Delete
+                                        </button>
+                                    </td>
                                 </tr>
                             );
                         }
@@ -89,6 +114,8 @@ function LaLiga() {
                                 <th scope="col">D</th>
                                 <th scope="col">L</th>
                                 <th scope="col">PTS</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>{items}</tbody>

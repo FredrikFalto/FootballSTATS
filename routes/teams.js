@@ -12,12 +12,12 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Getting one
+// Get specific
 router.get('/:id', getTeam, (req, res) => {
     res.json(res.team);
 });
 
-// Creating one
+// Create
 router.post('/', async (req, res) => {
     const team = new Team({
         name: req.body.name,
@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Updating one
+// Update
 router.patch('/:id', getTeam, async (req, res) => {
     if (req.body.name != null) {
         res.team.name = req.body.name;
@@ -69,7 +69,7 @@ router.patch('/:id', getTeam, async (req, res) => {
     }
 });
 
-// Deleting one
+// Delete
 router.delete('/:id', getTeam, async (req, res) => {
     try {
         await res.team.remove();
