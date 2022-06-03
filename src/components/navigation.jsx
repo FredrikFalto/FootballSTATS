@@ -22,7 +22,6 @@ function Navigation() {
     useEffect(() => {
         Axios.get(url + '/leagues')
             .then((res) => {
-                setLeagueSearch(res.data);
                 const leagues = res.data.map((item) => {
                     return (
                         <Nav.Link
