@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "name": "Premier League",
+  "country": "England"
+},{
+  "_id": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "name": "La Liga",
+  "country": "Spain"
+},{
+  "_id": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "name": "Bundesliga",
+  "country": "Germany"
+},{
+  "_id": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "name": "Serie A",
+  "country": "Italy"
+},{
+  "_id": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "name": "Liga NOS",
+  "country": "Portugal"
+}]

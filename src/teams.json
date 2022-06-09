@@ -1,0 +1,1249 @@
+[{
+  "_id": {
+    "$oid": "6294a8b35eec89a40e368c1f"
+  },
+  "name": "Arsenal",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 22,
+  "draws": 3,
+  "losses": 13,
+  "points": 69
+},{
+  "_id": {
+    "$oid": "6294a8ef5eec89a40e368c21"
+  },
+  "name": "Aston Villa",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 13,
+  "draws": 6,
+  "losses": 19,
+  "points": 45
+},{
+  "_id": {
+    "$oid": "6294ac925eec89a40e368c23"
+  },
+  "name": "Brentford",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 13,
+  "draws": 7,
+  "losses": 18,
+  "points": 46
+},{
+  "_id": {
+    "$oid": "6294aca55eec89a40e368c25"
+  },
+  "name": "Brighton",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 12,
+  "draws": 15,
+  "losses": 11,
+  "points": 51
+},{
+  "_id": {
+    "$oid": "6294acb65eec89a40e368c27"
+  },
+  "name": "Burnley",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 7,
+  "draws": 14,
+  "losses": 17,
+  "points": 35
+},{
+  "_id": {
+    "$oid": "6294acc85eec89a40e368c29"
+  },
+  "name": "Chelsea",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 21,
+  "draws": 11,
+  "losses": 6,
+  "points": 74
+},{
+  "_id": {
+    "$oid": "6294acd95eec89a40e368c2b"
+  },
+  "name": "Crystal Palace",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 15,
+  "losses": 12,
+  "points": 48
+},{
+  "_id": {
+    "$oid": "6294ad285eec89a40e368c2d"
+  },
+  "name": "Everton",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 6,
+  "losses": 21,
+  "points": 39
+},{
+  "_id": {
+    "$oid": "6294ad3c5eec89a40e368c2f"
+  },
+  "name": "Leeds",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 9,
+  "draws": 11,
+  "losses": 18,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "6294ad4d5eec89a40e368c31"
+  },
+  "name": "Leicester",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 14,
+  "draws": 10,
+  "losses": 14,
+  "points": 52
+},{
+  "_id": {
+    "$oid": "6294ad605eec89a40e368c33"
+  },
+  "name": "Liverpool",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 28,
+  "draws": 8,
+  "losses": 2,
+  "points": 92
+},{
+  "_id": {
+    "$oid": "6294ad705eec89a40e368c35"
+  },
+  "name": "Manchester City",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 29,
+  "draws": 6,
+  "losses": 3,
+  "points": 93
+},{
+  "_id": {
+    "$oid": "6294ad7f5eec89a40e368c37"
+  },
+  "name": "Manchester United",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 16,
+  "draws": 10,
+  "losses": 12,
+  "points": 58
+},{
+  "_id": {
+    "$oid": "6294ad925eec89a40e368c39"
+  },
+  "name": "Newcastle",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 13,
+  "draws": 10,
+  "losses": 15,
+  "points": 49
+},{
+  "_id": {
+    "$oid": "6294adb65eec89a40e368c3b"
+  },
+  "name": "Norwich",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 5,
+  "draws": 7,
+  "losses": 26,
+  "points": 22
+},{
+  "_id": {
+    "$oid": "6294adc75eec89a40e368c3d"
+  },
+  "name": "Southampton",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 9,
+  "draws": 13,
+  "losses": 16,
+  "points": 40
+},{
+  "_id": {
+    "$oid": "6294addb5eec89a40e368c3f"
+  },
+  "name": "Tottenham",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 22,
+  "draws": 5,
+  "losses": 11,
+  "points": 71
+},{
+  "_id": {
+    "$oid": "6294adea5eec89a40e368c41"
+  },
+  "name": "Watford",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 6,
+  "draws": 5,
+  "losses": 27,
+  "points": 23
+},{
+  "_id": {
+    "$oid": "6294adfc5eec89a40e368c43"
+  },
+  "name": "West Ham",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 16,
+  "draws": 8,
+  "losses": 14,
+  "points": 56
+},{
+  "_id": {
+    "$oid": "6294ae0f5eec89a40e368c45"
+  },
+  "name": "Wolves",
+  "league": {
+    "$oid": "6271386f7ada02bdf9e79c87"
+  },
+  "mp": 38,
+  "wins": 15,
+  "draws": 6,
+  "losses": 17,
+  "points": 51
+},{
+  "_id": {
+    "$oid": "6294cc565eec89a40e368cc0"
+  },
+  "name": "Alaves",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 8,
+  "draws": 7,
+  "losses": 23,
+  "points": 31
+},{
+  "_id": {
+    "$oid": "6294cc715eec89a40e368cc2"
+  },
+  "name": "Ath Bilbao",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 14,
+  "draws": 13,
+  "losses": 11,
+  "points": 55
+},{
+  "_id": {
+    "$oid": "6294cc875eec89a40e368cc4"
+  },
+  "name": "Atletico Madrid",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 21,
+  "draws": 8,
+  "losses": 9,
+  "points": 71
+},{
+  "_id": {
+    "$oid": "6294cc955eec89a40e368cc6"
+  },
+  "name": "Barcelona",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 21,
+  "draws": 10,
+  "losses": 7,
+  "points": 73
+},{
+  "_id": {
+    "$oid": "6294ccad5eec89a40e368cc8"
+  },
+  "name": "Real Betis",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 19,
+  "draws": 8,
+  "losses": 11,
+  "points": 65
+},{
+  "_id": {
+    "$oid": "6294ccc35eec89a40e368cca"
+  },
+  "name": "Cadiz CF",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 8,
+  "draws": 15,
+  "losses": 15,
+  "points": 39
+},{
+  "_id": {
+    "$oid": "6294ccd55eec89a40e368ccc"
+  },
+  "name": "Celta Vigo",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 12,
+  "draws": 10,
+  "losses": 16,
+  "points": 46
+},{
+  "_id": {
+    "$oid": "6294cce75eec89a40e368cce"
+  },
+  "name": "Elche",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 19,
+  "losses": 18,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294ccfe5eec89a40e368cd0"
+  },
+  "name": "Espanyol",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 10,
+  "draws": 12,
+  "losses": 16,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294cd2a5eec89a40e368cd4"
+  },
+  "name": "Granada CF",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 8,
+  "draws": 14,
+  "losses": 16,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "6294cd545eec89a40e368cd6"
+  },
+  "name": "Mallorca",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 10,
+  "draws": 9,
+  "losses": 19,
+  "points": 35
+},{
+  "_id": {
+    "$oid": "6294cd755eec89a40e368cda"
+  },
+  "name": "Osasuna",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 12,
+  "draws": 11,
+  "losses": 15,
+  "points": 47
+},{
+  "_id": {
+    "$oid": "6294cd885eec89a40e368cdc"
+  },
+  "name": "Rayo Vallecano",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 9,
+  "losses": 18,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294cdbb5eec89a40e368cde"
+  },
+  "name": "Real Madrid",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 26,
+  "draws": 8,
+  "losses": 4,
+  "points": 86
+},{
+  "_id": {
+    "$oid": "6294cddd5eec89a40e368ce0"
+  },
+  "name": "Sevilla",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 18,
+  "draws": 16,
+  "losses": 4,
+  "points": 70
+},{
+  "_id": {
+    "$oid": "6294cdec5eec89a40e368ce2"
+  },
+  "name": "Valencia",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 15,
+  "losses": 12,
+  "points": 48
+},{
+  "_id": {
+    "$oid": "6294cdf95eec89a40e368ce4"
+  },
+  "name": "Villareal",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 16,
+  "draws": 11,
+  "losses": 11,
+  "points": 59
+},{
+  "_id": {
+    "$oid": "6294ce435eec89a40e368ce6"
+  },
+  "name": "Levante",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 8,
+  "draws": 11,
+  "losses": 19,
+  "points": 35
+},{
+  "_id": {
+    "$oid": "6294ce535eec89a40e368ce8"
+  },
+  "name": "Real Sociedad",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 17,
+  "draws": 11,
+  "losses": 10,
+  "points": 62
+},{
+  "_id": {
+    "$oid": "6294cff56cc51e0c53d0143b"
+  },
+  "name": "Arminia Bielefeld",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 5,
+  "draws": 13,
+  "losses": 16,
+  "points": 28
+},{
+  "_id": {
+    "$oid": "6294d0056cc51e0c53d0143d"
+  },
+  "name": "Augsburg",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 10,
+  "draws": 8,
+  "losses": 16,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "6294d01d6cc51e0c53d0143f"
+  },
+  "name": "Borussia Mönchengladbach",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 12,
+  "draws": 9,
+  "losses": 13,
+  "points": 45
+},{
+  "_id": {
+    "$oid": "6294d0326cc51e0c53d01441"
+  },
+  "name": "Bayer Leverkusen",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 19,
+  "draws": 7,
+  "losses": 8,
+  "points": 64
+},{
+  "_id": {
+    "$oid": "6294d07a6cc51e0c53d01443"
+  },
+  "name": "VfL Bochum",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 12,
+  "draws": 6,
+  "losses": 16,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294d0916cc51e0c53d01445"
+  },
+  "name": "Borussia Dortmund",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 22,
+  "draws": 3,
+  "losses": 9,
+  "points": 69
+},{
+  "_id": {
+    "$oid": "6294d0af6cc51e0c53d01447"
+  },
+  "name": "Eintracht Frankfurt",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 10,
+  "draws": 12,
+  "losses": 12,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294d0c76cc51e0c53d01449"
+  },
+  "name": "FC Köln",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 14,
+  "draws": 10,
+  "losses": 10,
+  "points": 52
+},{
+  "_id": {
+    "$oid": "6294d0da6cc51e0c53d0144b"
+  },
+  "name": "Freiburg",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 15,
+  "draws": 10,
+  "losses": 9,
+  "points": 55
+},{
+  "_id": {
+    "$oid": "6294d1096cc51e0c53d0144d"
+  },
+  "name": "Greuther Fürth",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 3,
+  "draws": 9,
+  "losses": 22,
+  "points": 18
+},{
+  "_id": {
+    "$oid": "6294d11e6cc51e0c53d0144f"
+  },
+  "name": "Hertha Berlin",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 6,
+  "losses": 19,
+  "points": 33
+},{
+  "_id": {
+    "$oid": "6294d12b6cc51e0c53d01451"
+  },
+  "name": "Hoffenheim",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 13,
+  "draws": 7,
+  "losses": 14,
+  "points": 46
+},{
+  "_id": {
+    "$oid": "6294d1396cc51e0c53d01453"
+  },
+  "name": "Mainz",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 13,
+  "draws": 7,
+  "losses": 14,
+  "points": 46
+},{
+  "_id": {
+    "$oid": "6294d14d6cc51e0c53d01455"
+  },
+  "name": "RB Leipzig",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 17,
+  "draws": 7,
+  "losses": 10,
+  "points": 58
+},{
+  "_id": {
+    "$oid": "6294d1656cc51e0c53d01457"
+  },
+  "name": "Stuttgart",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 12,
+  "losses": 15,
+  "points": 33
+},{
+  "_id": {
+    "$oid": "6294d1756cc51e0c53d01459"
+  },
+  "name": "Union Berlin",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 16,
+  "draws": 9,
+  "losses": 9,
+  "points": 57
+},{
+  "_id": {
+    "$oid": "6294d1836cc51e0c53d0145b"
+  },
+  "name": "Wolfsburg",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 12,
+  "draws": 6,
+  "losses": 16,
+  "points": 42
+},{
+  "_id": {
+    "$oid": "6294d2a0bf0ce5157449e66a"
+  },
+  "name": "AC Milan",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 26,
+  "draws": 8,
+  "losses": 4,
+  "points": 86
+},{
+  "_id": {
+    "$oid": "6294d2b1bf0ce5157449e66c"
+  },
+  "name": "AS Roma",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 18,
+  "draws": 9,
+  "losses": 11,
+  "points": 63
+},{
+  "_id": {
+    "$oid": "6294d2c2bf0ce5157449e66e"
+  },
+  "name": "Atalanta",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 16,
+  "draws": 11,
+  "losses": 11,
+  "points": 59
+},{
+  "_id": {
+    "$oid": "6294d2e4bf0ce5157449e670"
+  },
+  "name": "Bologna",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 12,
+  "draws": 10,
+  "losses": 16,
+  "points": 46
+},{
+  "_id": {
+    "$oid": "6294d2f3bf0ce5157449e672"
+  },
+  "name": "Cagliari",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 6,
+  "draws": 12,
+  "losses": 20,
+  "points": 30
+},{
+  "_id": {
+    "$oid": "6294d302bf0ce5157449e674"
+  },
+  "name": "Empoli",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 10,
+  "draws": 11,
+  "losses": 17,
+  "points": 41
+},{
+  "_id": {
+    "$oid": "6294d31bbf0ce5157449e676"
+  },
+  "name": "Fiorentina",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 19,
+  "draws": 5,
+  "losses": 14,
+  "points": 62
+},{
+  "_id": {
+    "$oid": "6294d32ebf0ce5157449e678"
+  },
+  "name": "Genoa",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 4,
+  "draws": 16,
+  "losses": 18,
+  "points": 28
+},{
+  "_id": {
+    "$oid": "6294d34ebf0ce5157449e67c"
+  },
+  "name": "Juventus",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 20,
+  "draws": 10,
+  "losses": 8,
+  "points": 70
+},{
+  "_id": {
+    "$oid": "6294d35cbf0ce5157449e67e"
+  },
+  "name": "Lazio",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 18,
+  "draws": 10,
+  "losses": 10,
+  "points": 64
+},{
+  "_id": {
+    "$oid": "6294d36bbf0ce5157449e680"
+  },
+  "name": "Napoli",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 24,
+  "draws": 7,
+  "losses": 7,
+  "points": 79
+},{
+  "_id": {
+    "$oid": "6294d377bf0ce5157449e682"
+  },
+  "name": "Salernitana",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 7,
+  "draws": 10,
+  "losses": 21,
+  "points": 31
+},{
+  "_id": {
+    "$oid": "6294d38bbf0ce5157449e684"
+  },
+  "name": "Sampdoria",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 10,
+  "draws": 6,
+  "losses": 22,
+  "points": 36
+},{
+  "_id": {
+    "$oid": "6294d39abf0ce5157449e686"
+  },
+  "name": "Sassuolo",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 13,
+  "draws": 11,
+  "losses": 14,
+  "points": 50
+},{
+  "_id": {
+    "$oid": "6294d3b1bf0ce5157449e688"
+  },
+  "name": "Spezia",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 10,
+  "draws": 6,
+  "losses": 22,
+  "points": 36
+},{
+  "_id": {
+    "$oid": "6294d3bebf0ce5157449e68a"
+  },
+  "name": "Torino",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 13,
+  "draws": 11,
+  "losses": 14,
+  "points": 50
+},{
+  "_id": {
+    "$oid": "6294d3d1bf0ce5157449e68c"
+  },
+  "name": "Udinese",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 11,
+  "draws": 14,
+  "losses": 13,
+  "points": 47
+},{
+  "_id": {
+    "$oid": "6294d3e3bf0ce5157449e68e"
+  },
+  "name": "Venezia",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 6,
+  "draws": 9,
+  "losses": 23,
+  "points": 27
+},{
+  "_id": {
+    "$oid": "6294d3fabf0ce5157449e690"
+  },
+  "name": "Verona",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 14,
+  "draws": 11,
+  "losses": 13,
+  "points": 53
+},{
+  "_id": {
+    "$oid": "62950a4bbf0ce5157449e692"
+  },
+  "name": "Arouca",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 10,
+  "losses": 17,
+  "points": 31
+},{
+  "_id": {
+    "$oid": "62950a68bf0ce5157449e694"
+  },
+  "name": "Belenenses",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 5,
+  "draws": 11,
+  "losses": 18,
+  "points": 26
+},{
+  "_id": {
+    "$oid": "62950ab9bf0ce5157449e696"
+  },
+  "name": "Benfica",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 23,
+  "draws": 5,
+  "losses": 6,
+  "points": 74
+},{
+  "_id": {
+    "$oid": "62950accbf0ce5157449e698"
+  },
+  "name": "Boavista",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 17,
+  "losses": 10,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "62950af0bf0ce5157449e69a"
+  },
+  "name": "Braga",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 19,
+  "draws": 8,
+  "losses": 7,
+  "points": 65
+},{
+  "_id": {
+    "$oid": "62950afebf0ce5157449e69c"
+  },
+  "name": "Estoril",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 12,
+  "losses": 13,
+  "points": 39
+},{
+  "_id": {
+    "$oid": "62950b0cbf0ce5157449e69e"
+  },
+  "name": "Famalicao",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 12,
+  "losses": 13,
+  "points": 39
+},{
+  "_id": {
+    "$oid": "62950b4cbf0ce5157449e6a2"
+  },
+  "name": "Gil Vicente",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 13,
+  "draws": 12,
+  "losses": 9,
+  "points": 51
+},{
+  "_id": {
+    "$oid": "62950b5dbf0ce5157449e6a4"
+  },
+  "name": "Maritimo",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 11,
+  "losses": 14,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "62950b74bf0ce5157449e6a6"
+  },
+  "name": "Moreirense",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 8,
+  "losses": 19,
+  "points": 29
+},{
+  "_id": {
+    "$oid": "62950b86bf0ce5157449e6a8"
+  },
+  "name": "Pacos Ferreira",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 11,
+  "losses": 14,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "62950ba0bf0ce5157449e6aa"
+  },
+  "name": "Portimonense",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 10,
+  "draws": 8,
+  "losses": 16,
+  "points": 38
+},{
+  "_id": {
+    "$oid": "62950bafbf0ce5157449e6ac"
+  },
+  "name": "Santa Clara",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 9,
+  "draws": 13,
+  "losses": 12,
+  "points": 40
+},{
+  "_id": {
+    "$oid": "62950bd1bf0ce5157449e6ae"
+  },
+  "name": "Sporting Lisboa",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 27,
+  "draws": 4,
+  "losses": 3,
+  "points": 85
+},{
+  "_id": {
+    "$oid": "62950be6bf0ce5157449e6b0"
+  },
+  "name": "Tondela",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 7,
+  "losses": 20,
+  "points": 28
+},{
+  "_id": {
+    "$oid": "62950bfabf0ce5157449e6b2"
+  },
+  "name": "Vitoria Guimaraes",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 13,
+  "draws": 9,
+  "losses": 12,
+  "points": 48
+},{
+  "_id": {
+    "$oid": "62950c06bf0ce5157449e6b4"
+  },
+  "name": "Vizela",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 7,
+  "draws": 12,
+  "losses": 15,
+  "points": 33
+},{
+  "_id": {
+    "$oid": "629a69dc72273d76248cbd17"
+  },
+  "name": "Getafe",
+  "league": {
+    "$oid": "6283974465e8a8bea4c367b8"
+  },
+  "mp": 38,
+  "wins": 8,
+  "draws": 15,
+  "losses": 15,
+  "points": 39
+},{
+  "_id": {
+    "$oid": "629a69ef72273d76248cbd28"
+  },
+  "name": "Bayern München",
+  "league": {
+    "$oid": "6283975a65e8a8bea4c367ba"
+  },
+  "mp": 34,
+  "wins": 24,
+  "draws": 5,
+  "losses": 5,
+  "points": 77
+},{
+  "_id": {
+    "$oid": "629a6a0172273d76248cbd39"
+  },
+  "name": "Inter",
+  "league": {
+    "$oid": "6283977a65e8a8bea4c367be"
+  },
+  "mp": 38,
+  "wins": 25,
+  "draws": 9,
+  "losses": 4,
+  "points": 84
+},{
+  "_id": {
+    "$oid": "629a6a1472273d76248cbd4a"
+  },
+  "name": "FC Porto",
+  "league": {
+    "$oid": "6283978d65e8a8bea4c367c0"
+  },
+  "mp": 34,
+  "wins": 29,
+  "draws": 4,
+  "losses": 1,
+  "points": 91
+}]
